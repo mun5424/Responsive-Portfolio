@@ -16,7 +16,7 @@ header {
 }
 
 .header {
-    width: 960px;
+    width: 960 px;
     overflow: hidden;
     margin: auto;
 }
@@ -60,6 +60,7 @@ h2 {
     display: inline;
     float: right;
     padding: 10px 0 10px 0; 
+    text-align: none;
 }
 .navbar li { 
     font-family: sans-serif;
@@ -107,7 +108,8 @@ footer {
     border-top: 7px solid #4aaaa5;
     font-size: 14px; 
     color: #fff;
-    position: fixed;
+    position: absolute;
+    bottom: 0px;
     width:100%;
 
 }
@@ -209,26 +211,28 @@ input[type=message] {
         padding: 30px 0 30px 0;
         width: 100%;
         position: static;
+        margin: auto;   
 
     }
 
-   .header {
-       width:100%;
-        overflow: hidden;
-        margin: auto;
+    .header {
+        width: 100%;
     }
 
     .navbar {
         text-align: center;
         width: 100%;
+        margin: 0px;
         padding: 0px;
     }
     
-    .navbar ul {
-        padding: 0px;
+    .navbar ul { 
+        padding: 10px 0px 0px 0px; 
     }
-    .navbar li { 
-        padding: 0 70px 0 70px;
+
+    .navbar li {
+        width: 100%;
+        padding: 0 11% 0px 11%;
     }
     
     body {
@@ -240,16 +244,16 @@ input[type=message] {
     }
 
     .container-content { 
-        width: 640px;
+        width: 100%;
     }
 
     .content {
-    width: 600px;
+    width: 96%;
     margin: 20px 0px 20px 15px;
     }
 
     .sidebar {
-        width: 585px;
+        width: 96%;
         margin: 20px 20px  20px 15px;
     }
 
@@ -273,81 +277,4 @@ input[type=message] {
         min-height: 100%;
     }
     
-
-    
-/* Width at 640px and below */
-@media screen and (max-width: 640px) {
-    
-        h1 {
-            font-family: Georgia;
-            background-color: #4aaaa5;
-            color: #fff;
-            text-align: center;
-            padding: 30px 0 30px 0;
-            width: 100%;
-            position: static;
-    
-        }
-    
-       .header {
-           width:100%;
-            overflow: hidden;
-            margin: auto;
-        }
-    
-        .navbar {
-            text-align: center;
-            width: 100%;
-            padding: 0px;
-        }
-        
-        .navbar ul {
-            padding: 0px;
-        }
-        .navbar li { 
-            padding: 0 70px 0 70px;
-        }
-        
-        body {
-          background-color: #333;
-        }
-    
-        .about-me #profile-image {
-            width: 90%;
-        }
-    
-        .container-content { 
-            width: 640px;
-        }
-    
-        .content {
-        width: 600px;
-        margin: 20px 0px 20px 15px;
-        }
-    
-        .sidebar {
-            width: 585px;
-            margin: 20px 20px  20px 15px;
-        }
-    
-        .thumbnail { 
-            width: 520px;
-            height: 400px;
-        }
-        
-        .thumb_caption {
-            height: 50px;
-            width: 500px;
-            text-align: center;
-            position: absolute;
-            margin: 0px 0px 0px 5px;
-            padding: 10px 10px 10px 10px;
-            bottom: 25px;
-        }
-        
-        .thumbnail-image {
-            min-width: 100%;
-            min-height: 100%;
-        }
-        
 }
